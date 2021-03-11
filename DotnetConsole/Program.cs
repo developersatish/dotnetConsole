@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DotnetConsole.Inheritance;
+using System;
 
 namespace DotnetConsole
 {
@@ -6,6 +7,7 @@ namespace DotnetConsole
     {
         static void Main(string[] args)
         {
+            Entry.Go();
             Console.WriteLine("Hello World!");
         }
     }
