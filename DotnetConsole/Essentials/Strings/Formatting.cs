@@ -8,6 +8,21 @@ namespace DotnetConsole.Essentials.Strings
     {
         public static void Go()
         {
+            string inputString = "abac";
+            char[] arr = inputString.ToCharArray();
+            bool isPallindrom = true;
+            for (int i = 0; i < arr.Length / 2; i++)
+            {
+                char c = arr[i];
+                char c2 = arr[arr.Length - (i+1)];
+                if (arr[i] != arr[arr.Length - (i+1)])
+                {
+                    isPallindrom = false;
+                    break;
+                }
+
+            }
+
             float f1 = 123.4f;
             int i1 = 2000;
 
