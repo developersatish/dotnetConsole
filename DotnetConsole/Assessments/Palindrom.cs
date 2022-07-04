@@ -9,7 +9,11 @@ namespace DotnetConsole.Assessments
 {
     public class Palindrom
     {
-       public static string Check(string str)
+        public static void Go()
+        {
+            Console.WriteLine(Check(Console.ReadLine()));
+        }
+        static string Check(string str)
         {
             string flag = "false";
             str = Regex.Replace(str, "[^a-zA-Z0-9_.]+", "", RegexOptions.Compiled).Trim().ToUpper();

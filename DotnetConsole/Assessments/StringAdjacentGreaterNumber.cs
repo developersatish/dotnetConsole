@@ -8,7 +8,11 @@ namespace DotnetConsole.Assessments
 {
     public class StringAdjacentGreaterNumber
     {
-       public static string Check(string str)
+        public static void Go()
+        {
+            Console.WriteLine(Check(Console.ReadLine()));
+        }
+        static string Check(string str)
         {
             char[] chars = str.ToCharArray();
             string flag = "false";

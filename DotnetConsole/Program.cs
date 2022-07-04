@@ -1,8 +1,7 @@
 ﻿using DotnetConsole.Essentials;
-using DotnetConsole.Inheritance;
 using System;
 
-using DotnetConsole.Assessments;
+
 namespace DotnetConsole
 {
     class Program
@@ -12,21 +11,12 @@ namespace DotnetConsole
             int again = 0;
             do
             {
-
-
-
-                // Entry.Go();
-                // Essential.Go();
-
-
-
-               // Console.WriteLine(Palindrom.Check(Console.ReadLine()));
-
-
-                Console.WriteLine(StringAdjacentGreaterNumber.Check(Console.ReadLine()));
+                Essential.Go();
                 Console.WriteLine("Again !! Press 1");
                 again = Convert.ToInt32(Console.ReadLine());
             } while (again == 1);
         }
+
     }
 }
+
